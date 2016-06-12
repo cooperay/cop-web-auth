@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/views/system/common/includeSystemSet.jsp=UTF-8
+encoding//resources/log4j.properties=UTF-8
+encoding//resources/spring/dbconfig.properties=UTF-8
+encoding/<project>=UTF-8

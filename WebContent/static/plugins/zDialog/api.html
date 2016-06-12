@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>zDialogApi</title>
+</head>
+<body>
+<ul>    
+	<li><span style="color:rgb(255, 0, 0); ">ID</span>：窗口id号，可省略。每个窗口的id必须是唯一的不能重复。</li>
+    <li><span style="color:rgb(255, 0, 0); ">Title</span>：窗口标题。如不写此项默认值为""。</li>
+    <li><span style="color:rgb(255, 0, 0); ">URL</span>：  窗口内容页地址，或使用相对路径或绝对路径，注意如果使用http://www.xxx.com形式的绝对地址，则http://不能省略。</li>
+    <li><span style="color:rgb(255, 0, 0); ">InnerHtml</span>：  窗口内容html代码，用于直接输出html内容，注意不要让生成的内容因为不适当的宽度或定位方式而破坏了Dialog的外观。</li>
+    <li><span style="color:rgb(255, 0, 0); ">InvokeElementId</span>：  本页面内隐藏的元素的id，用于显示页面内隐藏的元素中的html内容，注意不要让内容因为不适当的宽度或定位方式而破坏了Dialog的外观。</li>
+    <li><span style="color:rgb(255, 0, 0); ">Width</span>：窗口宽度（dialog内容区宽度），值为数值型，默认值为窗口可见宽的40%。</li>
+    <li><span style="color:rgb(255, 0, 0); ">Height</span>：窗口高度（dialog内容区高度），值为数值型，默认值为窗口可见宽的20%。</li>
+    <li><span style="color:rgb(255, 0, 0); ">Left</span>：窗口距浏览器左边距离，值为数值型或字符串型（当使用百分比时为字符串型），如Left:"0%",Top:"0%"为左上，Left:"50%",Top:"50%"为居中，Left:"100%",Top:"100%"为右下。</li>
+    <li><span style="color:rgb(255, 0, 0); ">Top</span>：窗口距浏览器顶端距离，值为数值型或字符串型（百分比）。</li>
+    <li><span style="color:rgb(255, 0, 0); ">Drag</span>：是否允许拖动窗口，值为布尔型(true|false)，默认值为true，注意需要页面引用了Drag.js。</li>
+    <li><span style="color:rgb(255, 0, 0); ">OKEvent</span>：点击确定按钮后执行的函数。</li>
+    <li><span style="color:rgb(255, 0, 0); ">CancelEvent</span>：点击取消按钮或点击关闭按钮后执行的函数，默认为关闭本Dialog。</li>
+    <li><span style="color:rgb(255, 0, 0); ">ShowButtonRow</span>：是否不显示按钮栏，值为布尔型(true|false)，默认值为false，当定义了OKEvent或调用了addButton时自动设为true。</li>
+    <li><span style="color:rgb(255, 0, 0); ">MessageTitle,Message</span>：自定义的窗口说明栏中的小标题和说明。</li>
+    <li><span style="color:rgb(255, 0, 0); ">ShowMessageRow</span>：是否显示窗口说明栏，值为布尔型(true|false)，默认值为false，当定义了MessageTitle或Message时自动设为true。</li>
+    <li><span style="color:rgb(255, 0, 0); ">AutoClose</span>：是否自行关闭，值为数值型，默认值为false。</li>
+    <li><span style="color:rgb(255, 0, 0); ">OnLoad</span>：窗口内容载入完成后执行的程序，值为函数型。</li>
+</ul>
+</body>
+</html>

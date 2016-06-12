@@ -1,0 +1,9 @@
+.font-bold{font-weight: bold;}
+/* ±³¾° */
+/* .container{background-image:url('${jypath}/static/images/system/loginbg.jpg') ;background-attachment:fixed;background-repeat:no-repeat;background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;} */
+/* dialog */
+.title-no-close .ui-dialog-titlebar-close{display: none;}
+.loading-no-close .ui-dialog-titlebar{display: none;}
+.loading-no-close{background:#fff;filter: alpha(opacity = 50);background-color: rgba(0,0,0,0.5) !important;color:#ff892a;border:0px !important;}
+.loading-no-close .ui-dialog-content{padding: 0 !important;margin-top: 2px;margin-bottom: 2px;}
+
